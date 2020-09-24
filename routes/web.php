@@ -4,7 +4,7 @@ use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('contacts/index');
+    return view('home');
 });
 
 Route::resource('contacts', ContactController::class);
