@@ -11,6 +11,20 @@ class CarController extends Controller
 {
 
 
+    public function index()
+    {
+        $contacts = Car::all();
+
+        return view('cars/index', compact('car'));
+    }
+
+
+    public function create()
+    {
+        return view('cars/create');
+    }
+
+
  public function store(Request $request)
  {
     $car = new Car([
