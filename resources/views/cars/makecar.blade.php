@@ -17,18 +17,18 @@
       <form method="post" action="{{ route('cars.store') }}">
           @csrf
           <div class="form-group">
-              <label for="first_name">Model:</label>
-              <input type="text" class="form-control" name="first_name"/>
+              <label for="model">Model:</label>
+              <input type="text" class="form-control" name="model"/>
           </div>
 
           <div class="form-group">
-              <label for="last_name">Type:</label>
-              <input type="text" class="form-control" name="last_name"/>
+              <label for="type">Type:</label>
+              <input type="text" class="form-control" name="type"/>
           </div>
 
           <div class="form-group">
-              <label for="email">Year:</label>
-              <input type="text" class="form-control" name="email"/>
+              <label for="year">Year:</label>
+              <input type="text" class="form-control" name="year"/>
           </div>
           <button type="submit" class="btn btn-primary-outline">Add contact</button>
       </form>

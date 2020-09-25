@@ -13,14 +13,18 @@ class CarController extends Controller
 
     public function index()
     {
-        return view('cars.makecar');
+
+
+        $cars = Car::all();
+
+        return view('cars.makecar', compact('cars'));
     }
 
 
-    // public function create()
-    // {
-    //     return view('cars/makecar');
-    // }
+    public function create()
+    {
+        return view('cars.makecar');
+    }
 
 
  public function store(Request $request)
@@ -35,7 +39,8 @@ class CarController extends Controller
 
 $car->save();
 
-return redirect('')->with('success', 'Car made!');
+return redirect('cars')->with('success', 'Car made!');
+
 
 }
 
