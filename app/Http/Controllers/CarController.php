@@ -13,9 +13,7 @@ class CarController extends Controller
 
     public function index()
     {
-        $car = Car::all();
-
-        return view('cars.makecar', compact('car'));
+        return view('cars.makecar');
     }
 
 
