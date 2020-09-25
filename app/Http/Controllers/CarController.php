@@ -13,16 +13,16 @@ class CarController extends Controller
 
     public function index()
     {
-        $contacts = Car::all();
+        $car = Car::all();
 
-        return view('cars/index', compact('car'));
+        return view('cars.makecar', compact('car'));
     }
 
 
-    public function create()
-    {
-        return view('cars/create');
-    }
+    // public function create()
+    // {
+    //     return view('cars/makecar');
+    // }
 
 
  public function store(Request $request)
@@ -30,16 +30,16 @@ class CarController extends Controller
     $car = new Car([
 
         'type' => $request->get('type'),
-
-        'year' => $request->get('year'),
-
-        'model' => $request->get('model')
+        'model' => $request->get('model'),
+        'year' => $request->get('year')
 ]);
 
 
 $car->save();
 
-return redirect('/car')->with('success', 'Car made!');
+return redirect('')->with('success', 'Car made!');
 
 }
+
+
 }
