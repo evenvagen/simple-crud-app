@@ -13,13 +13,13 @@ class ContactController extends Controller
     {
         $contacts = Contact::all();
 
-        return view('contacts.index', compact('contacts'));
+        return view('contacts/index', compact('contacts'));
     }
 
 
     public function create()
     {
-        return view('contacts.create');
+        return view('contacts/create');
     }
 
 
