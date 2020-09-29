@@ -42,5 +42,13 @@ return redirect('cars')->with('success', 'Car made!');
 
 }
 
+public function destroy($id){
+
+    $car = Car::find($id);
+
+    $car->delete();
+
+    // return redirect('/cars')->with('success', 'Car deleted!');
+}
 
 }
