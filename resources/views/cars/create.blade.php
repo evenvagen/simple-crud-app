@@ -30,7 +30,7 @@
               <label for="year">Year:</label>
               <input type="text" class="form-control" name="year"/>
           </div>
-          <button type="submit" class="btn btn-primary-outline">Add contact</button>
+          <button type="submit" class="btn btn-primary-outline">Add car</button>
       </form>
   </div>
 </div>

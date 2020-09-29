@@ -3,16 +3,14 @@
 @section('main')
 @foreach($cars as $car)
 
-<div>
-    {{$car->year}}
-    {{$car->model}}
-    {{$car->type}}
     <form action="{{ route('cars.destroy', $car->id)}}" method="post">
+        {{$car->year}}
+        {{$car->model}}
+        {{$car->type}}
         @csrf
         @method('DELETE')
-        <button type="submit">Slett bil</button>
+        <button>x</button>
     </form>
-</div>
 
 <br/>
 @endforeach
