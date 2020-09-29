@@ -27,6 +27,12 @@ class CarController extends Controller
 
  public function store(Request $request)
  {
+
+    $request->validate([
+        'model'=>'required',
+        'type'=>'required'
+    ]);
+
     $car = new Car([
 
         'type' => $request->get('type'),
