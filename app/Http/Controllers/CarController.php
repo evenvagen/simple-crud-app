@@ -48,7 +48,7 @@ public function destroy($id){
 
     $car->delete();
 
-    // return redirect('/cars')->with('success', 'Car deleted!');
+    return redirect('/cars')->with('success', 'Car deleted!');
 }
 
 }
