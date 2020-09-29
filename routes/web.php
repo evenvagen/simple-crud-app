@@ -11,4 +11,8 @@ Route::get('/', function () {
 
 Route::resource('contacts', ContactController::class);
 
-Route::resource('cars', CarController::class);
+// Route::resource('cars', CarController::class);
+
+Route::get('cars', [CarController::class, 'index']);
+
+Route::post('cars', [CarController::class, 'store'])->name('cars.store');

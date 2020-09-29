@@ -11,7 +11,13 @@
 
 <h1>Make profiles here!
 
-    -> <a href="{{ route('contacts.create')}}">PROFILE MAKER</a>
+    -> <a href="{{ route('contacts.create')}}">Profile Maker</a>
+
+    <br/>
+
+    Make cars here!
+
+-> <a href="{{ route('cars.store') }}">Car Maker</a>
 
 </h1>
 
