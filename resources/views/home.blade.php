@@ -17,7 +17,7 @@
 
     Make cars here!
 
--> <a href="{{ route('cars.store') }}">Car Maker</a>
+-> <a href="{{ route('cars.create') }}">Car Maker</a>
 
 </h1>
 
