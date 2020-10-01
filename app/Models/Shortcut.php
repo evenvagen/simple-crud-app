@@ -11,6 +11,5 @@ class Shortcut extends Model
         'shortcut',
         'command',
         'program',
-        'isStandard'
     ];
 }
