@@ -12,7 +12,7 @@
 @foreach ($shortcuts as $shortcut)
 <p> {{ $shortcut->shortcut }} </p>
 <p> {{ $shortcut->command }} </p>
-<p> {{ $shortcut->program}} </p>
+<p> {{ $shortcut->program }} </p>
 @endforeach
 
 <h1>Hello world</h1>
