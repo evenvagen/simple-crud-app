@@ -9,7 +9,7 @@ class Shortcut extends Model
 {
     protected $fillable = [
         'shortcut',
-        'task',
+        'command',
         'program',
         'isStandard'
     ];

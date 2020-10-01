@@ -10,14 +10,17 @@ class ShortcutController extends Controller
 
     public function index()
     {
-        return view('shortcuts/index');
+
+        $shortcuts = Shortcut::all();
+
+        return view('shortcuts/index', compact('shortcuts'));
     }
 
     public function store(Request $request)
     {
         $shortcut =  new Shortcut([
                 'shortcut'=>$request->get('shortcut'),
-                'task'=>$request->get('task'),
+                'command'=>$request->get('command'),
                 'program'=>$request->get('program')
             ]);
 
